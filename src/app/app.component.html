@@ -1,20 +1,723 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status"></div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<!-- FullScreen -->
+<div class="intro-header">
+  <div class="col-xs-12 text-center abcen2">
+      <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Duryea</h1>
+      <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Pitch League</h3>
+
+  </div>
+  <div class="col-xs-12 text-center abcen wow fadeIn">
+      <div class="button_down ">
+          <a class="imgcircle wow" data-wow-duration="1.5s" href="#news"> <img class="img_scroll" src="assets/img/icon/circle.png" alt=""> </a>
+      </div>
+  </div>
+
+</div>
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">Duryea Pitch League</a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+              <li class="menuItem"><a href="#news">News</a></li>
+              <li class="menuItem"><a href="#contact">Contact List</a></li>
+              <li class="menuItem"><a href="#schedule">Schedule</a></li>
+              <li class="menuItem"><a href="#standings">Standings</a></li>
+              <li class="menuItem"><a href="#stats">Stats</a></li>
+              <li class="menuItem"><a href="#carousel">Scoresheets</a></li>
+              <li class="menuItem"><a href="#rules">League Rules</a></li>
+              <!--<li class="menuItem"><a href="#downloads">Downloads</a></li>-->
+              <li class="menuItem"><a href="#commish">Commissioner Contact</a></li>
+          </ul>
+      </div>
+
+  </div>
+</nav>
+
+<div id="news" class="content-section-a" style="border-top: 0">
+  <div class="container">
+
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+          <h2>News</h2>
+          <p class="lead" style="margin-top:0">Latest League Messages.</p>
+
+      </div>
+
+      <div class="row">
+          <div class="col-sm-12 wow fadeInDown newsItem">
+
+     
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4 wow fadeInDown text-center newsItem">
+              <img class="rotate" src="assets/img/icon/like.svg" alt="Generic placeholder image">
+              <h3>Welcome!</h3>
+              <p class="lead newsItemContent">Week 1 is here.  Please see your team name\number in the lists below, see you tonight at 6 PM! - Posted on 9/11/2018 - 6:30 AM</p>
+
+          </div>
+          <div class="col-sm-4 wow fadeInDown text-center newsItem">
+              <img class="rotate" src="assets/img/icon/beacon.svg" alt="Generic placeholder image">
+              <h3>Week 1 Complete!</h3>
+              <p class="lead newsItemContent">Results and standings are posted online.  Since week 1 was sort of chaos (sorry!) we took the team you played and applied that match to where you would have played during the season.  So take a look each week in advance so you know who you are playing incase you've already played that match.  Even if you have, cmon down to the VFW anyway to play some pickup games, cheers! Posted on 9/12/2018 - 10:00 PM</p>
+
+          </div>
+          <div class="col-sm-4 wow fadeInDown text-center newsItem">
+              <img class="rotate" src="assets/img/icon/airplane.svg" alt="Generic placeholder image">
+              <h3>Week 2 Complete!</h3>
+              <p class="lead newsItemContent">Results and standings are posted online.  We had a big shakeup in the standings this week, check it out and see ya next week! Posted on 9/18/2018 - 10:00 PM</p>
+
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-4 wow fadeInDown text-center newsItem">
+              <img class="rotate" src="assets/img/icon/like.svg" alt="Generic placeholder image">
+              <h3>We're caught up!</h3>
+              <p class="lead newsItemContent">We had a few weeks of scores to update here, sorry for the delay.  Standings are now updated, AND the schedule has been corrected as well (we had team 7 playing twice during week 3.. found and fixed the issue).  Herein, the schedule should be ready to rock n roll, just follow it like normal. See you on the 16th! - Posted on 10/10/2018 - 11:30 PM</p>
+
+          </div>
+          <div class="col-sm-4 wow fadeInDown text-center newsItem">
+              <img class="rotate" src="assets/img/icon/bank.svg" alt="Generic placeholder image">
+              <h3>Week 5 Complete!</h3>
+              <p class="lead newsItemContent">Results and standings as of 10/16 are are posted online, and we had quite the shakeup this week!.  Good cards this week, see ya next Tuesday! Posted on 10/16/2018 - 11:30 PM</p>
+
+          </div>
+   
+      </div>
+
+
+  </div>
+</div>
+<!-- Contact List -->
+<div id="contact" class="content-section-b ">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+              <h2>Contact List</h2>
+              <p class="lead" style="margin-top:0">Below are the teams...</p>
+          </div>
+          <div class="mockup-content">
+
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Team #</th>
+                              <th>Name</th>
+                              <th>Phone</th>
+                              <th>Email</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="rowOffset">
+                              <td>1</td>
+                              <td>Carl Witkowski (Jr)</td>
+                              <td>570.498.9641</td>
+                              <td>cwitkowski@hotmail.com</td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>1</td>
+                              <td>Mark Hoover (C)</td>
+                              <td>570.299.9992</td>
+                              <td>hoover@shamrocknepa.com</td>
+                          </tr>
+                          <tr>
+                              <td>2   </td>
+                              <td>Jeff Pisanchyn   </td>
+                              <td>570.237.1747   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                              <td>2   </td>
+                              <td>Chris Malvizzi</td>
+                              <td></td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>3   </td>
+                              <td>Tony Medici</td>
+                              <td>      </td>
+                              <td></td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>3   </td>
+                              <td>Bob Remsky   </td>
+                              <td>570.446.0388   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                              <td>4   </td>
+                              <td>Jugus Jugus</td>
+                              <td></td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                              <td>4   </td>
+                              <td>Edward Klein   </td>
+                              <td>570.362.8607   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>5   </td>
+                              <td>Ryan McBride   </td>
+                              <td>570.954.0236   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>5   </td>
+                              <td>Frank Biancardi</td>
+                              <td>   </td>
+                              <td>   </td>
+                          </tr>
+
+                          <tr>
+                              <td>6   </td>
+                              <td>Joseph Pisanchyn   </td>
+                              <td>570.589.9602</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                              <td>6   </td>
+                              <td>Frank Bartoli</td>
+                              <td>610.547.1194</td>
+                              <td></td>
+                          </tr>
+
+                          <tr class="rowOffset">
+                              <td>7   </td>
+                              <td>Brian Hastings   </td>
+                              <td>570.947.8653   </td>
+                              <td>   </td>
+                          <tr class="rowOffset">
+                              <td>7   </td>
+                              <td>Noah Katz   </td>
+                              <td>570.947.3383   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="">
+                              <td>8   </td>
+                              <td>Jerry Palmaioli   </td>
+                              <td>570.574.2178   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="">
+                              <td>8   </td>
+                              <td>Nick Parise   </td>
+                              <td>570.357.1472   </td>
+                              <td>   </td>
+                          </tr>
+
+                          <tr class="rowOffset">
+                              <td>9   </td>
+                              <td>John   </td>
+                              <td>570.357.0401</td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>9   </td>
+                              <td>Rob</td>
+                              <td>570.954.1088</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                              <td>10   </td>
+                              <td>Ed Feist   </td>
+                              <td>570.855.8140   </td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="">
+                              <td>10   </td>
+                              <td>Mystery Partner</td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>11   </td>
+                              <td>Stacy   </td>
+                              <td>570.885.3556</td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="rowOffset">
+                              <td>11   </td>
+                              <td>Jill</td>
+                              <td>570.357.5494</td>
+                              <td>   </td>
+                          </tr>
+                          <tr class="info">
+                              <td>League Alternate </td>
+                              <td>Carl Witkowski (Sr.) </td>
+                              <td>570.510.0331</td>
+                              <td> </td>
+                          </tr>
+                          <tr class="info">
+                              <td>League Alternate</td>
+                              <td>Joe Semon </td>
+                              <td>570.430.0646 </td>
+                              <td> </td>
+                          </tr>
+                          <tr class="info">
+                              <td>League Alternate </td>
+                              <td>Jeff Hoover </td>
+                              <td>570.498.2132 </td>
+                              <td> </td>
+                          </tr>
+                          <tr class="info">
+                              <td>League Alternate </td>
+                              <td>Danny Stella</td>
+                              <td>570.499.2294 </td>
+                              <td> </td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Leage SChed -->
+<div id="schedule" class="content-section-a ">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+              <h2>Schedule</h2>
+              <p class="lead" style="margin-top:0">Here is the weekly schedule</p>
+              <p>
+                  Show <select name="team" id="team">
+                      <option value="All">All Teams</option>
+                      <option value="1">Team 1 (Carl\Mark)</option>
+                      <option value="2">Team 2 (Chris\Jeff)</option>
+                      <option value="3">Team 3 (Bob\Tony)</option>
+                      <option value="4">Team 4 (Jon\Ed)</option>
+                      <option value="5">Team 5 (Ryan\Frank Bi.)</option>
+                      <option value="6">Team 6 (Joe P\Frank Ba.)</option>
+                      <option value="7">Team 7 (Noah\Brian)</option>
+                      <option value="8">Team 8 (Jerry\Nick)</option>
+                      <option value="9">Team 9 (John\Rob)</option>
+                      <option value="10">Team 10 (Ed\Ed's Mystery Partner)</option>
+                      <option value="11">Team 11 (Stacy\Jill)</option>
+                  </select>
+              </p>
+
+          </div>
+          <div class="mockup-content">
+
+              <div class="">
+                  <table id="tableSched" class="table">
+                      <thead>
+                          <tr>
+                              <th>Matchup</th>
+                              <th>Team 1</th>
+
+                              <th>Team 2</th>
+                              <th>Results</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr><td>02 <small>(9/18/2018)</small></td><td>3</td><td>1</td><td>Team 3 beat Team 1 3-2</td></tr>
+                          <tr><td>02 <small>(9/18/2018)</small></td><td>4</td><td>2</td><td>Team 2 beat Team 4 4-1</td></tr>
+                          <tr><td>02 <small>(9/18/2018)</small></td><td>6</td><td>5</td><td>Team 6 beat Team 5 3-2</td></tr>
+                          <tr><td>02 <small>(9/18/2018)</small></td><td>10</td><td>8</td><td>Team 10 beat Team 8 4-1</td></tr>
+                          <tr><td>02 <small>(9/18/2018)</small></td><td>7</td><td>9</td><td>Team 9 beat Team 7 3-2</td></tr>
+                          <tr><td>03 <small>(9/25/2018)</small></td><td>4</td><td>3</td><td>Team 3 beat Team 4 3-2</td></tr>
+                          <tr><td>03 <small>(9/25/2018)</small></td><td>1</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>03 <small>(9/25/2018)</small></td><td>2</td><td>6</td><td>Team 6 beat Team 2 3-2 (played 9/12)</td></tr>
+                          <tr><td>03 <small>(9/25/2018)</small></td><td>11</td><td>7</td><td>Team 7 beat Team 11 3-2 (played 9/12)</td></tr>
+                          <tr><td>03 <small>(9/25/2018)</small></td><td>9</td><td>10</td><td>Team 10 beat Team 9 3-2</td></tr>
+                          <tr><td>04 <small>(10/2/2018)</small></td><td>2</td><td>1</td><td>Team 1 beat Team 2 4-1</td></tr>
+                          <tr><td>04 <small>(10/2/2018)</small></td><td>5</td><td>3</td><td>Team 3 beat Team 5 3-2 (played 9/12)</td></tr>
+                          <tr><td>04 <small>(10/2/2018)</small></td><td>6</td><td>4</td><td>Team 4 beat Team 6 3-2</td></tr>
+                          <tr><td>04 <small>(10/2/2018)</small></td><td>7</td><td>8</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>04 <small>(10/2/2018)</small></td><td>11</td><td>9</td><td>Team 9 beat Team 11 4-1</td></tr>
+                          <tr><td>05 <small>(10/9/2018)</small></td><td>5</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>05 <small>(10/9/2018)</small></td><td>1</td><td>4</td><td>Team 4 beat Team 1 3-2</td></tr>
+                          <tr><td>05 <small>(10/9/2018)</small></td><td>3</td><td>6</td><td>Team 3 beat Team 6 3-2</td></tr>
+                          <tr><td>05 <small>(10/9/2018)</small></td><td>11</td><td>8</td><td>Team 8 beat Team 11 4-1</td></tr>
+                          <tr><td>05 <small>(10/9/2018)</small></td><td>7</td><td>10</td><td>Team 7 beat Team 10 3-2</td></tr>
+                          <tr><td>06 <small>(10/16/2018)</small></td><td>6</td><td>1</td><td>Team 1 beat Team 6 3-2</td></tr>
+                          <tr><td>06 <small>(10/16/2018)</small></td><td>2</td><td>3</td><td>Team 2 beat Team 3 4-1</td></tr>
+                          <tr><td>06 <small>(10/16/2018)</small></td><td>4</td><td>5</td><td>Team 4 beat Team 5 3-2</td></tr>
+                          <tr><td>06 <small>(10/16/2018)</small></td><td>8</td><td>9</td><td>Team 9 beat Team 8 3-2</td></tr>
+                          <tr><td>06 <small>(10/16/2018)</small></td><td>10</td><td>11</td><td>Team 10 beat Team 11 5-0</td></tr>
+                          <tr><td>07 <small>(10/23/2018)</small></td><td>11</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>07 <small>(10/23/2018)</small></td><td>9</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>07 <small>(10/23/2018)</small></td><td>8</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>07 <small>(10/23/2018)</small></td><td>7</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>07 <small>(10/23/2018)</small></td><td>3</td><td>10</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>08 <small>(10/30/2018)</small></td><td>2</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>08 <small>(10/30/2018)</small></td><td>6</td><td>8</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>08 <small>(10/30/2018)</small></td><td>3</td><td>9</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>08 <small>(10/30/2018)</small></td><td>1</td><td>10</td><td>Team 1 beat Team 10 4-1 (played 9/12)</td></tr>
+                          <tr><td>08 <small>(10/30/2018)</small></td><td>5</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>09 <small>(11/6/2018)</small></td><td>8</td><td>1</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>09 <small>(11/6/2018)</small></td><td>10</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>09 <small>(11/6/2018)</small></td><td>7</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>09 <small>(11/6/2018)</small></td><td>9</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>09 <small>(11/6/2018)</small></td><td>6</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>10 <small>(11/13/2018)</small></td><td>8</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>10 <small>(11/13/2018)</small></td><td>11</td><td>3</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>10 <small>(11/13/2018)</small></td><td>10</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>10 <small>(11/13/2018)</small></td><td>9</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>10 <small>(11/13/2018)</small></td><td>1</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>11 <small>(11/20/2018)</small></td><td>9</td><td>1</td><td>Team 1 beat Team 9 4-1 (played 9/12)</td></tr>
+                          <tr><td>11 <small>(11/20/2018)</small></td><td>8</td><td>3</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>11 <small>(11/20/2018)</small></td><td>10</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>11 <small>(11/20/2018)</small></td><td>5</td><td>7</td><td>Team 7 beat Team 5 3-2 (played 9/25)</td></tr>
+                          <tr><td>11 <small>(11/20/2018)</small></td><td>4</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>12 <small>(11/27/2018)</small></td><td>3</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>12 <small>(11/27/2018)</small></td><td>4</td><td>8</td><td>Team 8 beat Team 4 4-1 (played 9/12)</td></tr>
+                          <tr><td>12 <small>(11/27/2018)</small></td><td>2</td><td>9</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>12 <small>(11/27/2018)</small></td><td>5</td><td>10</td><td>This matchup hasnt occurred yet</td></tr>
+                          <tr><td>12 <small>(11/27/2018)</small></td><td>1</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
+
+
+                      </tbody>
+                  </table>
+
+
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Leage Standings -->
+<div id="standings" class="content-section-b ">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+              <h2>Standings</h2>
+              <p class="lead" style="margin-top:0">Below are the team standings.</p>
+              <p>Results are as of <strong>10/16/2018</strong></p>
+          </div>
+          <div class="mockup-content">
+              <div class="table-responsive">
+                  <table id="tableStandings" class="table table-striped">
+                      <thead>
+                          <tr>
+                              <th>Place</th>
+                              <th>Team</th>
+                              <th>Wins</th>
+                              <th>Losses</th>
+                              <th>Games Played</th>
+                              <th>Winning %</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="info"><td>1</td><td>1</td><td>15</td><td>10</td><td>25</td><td>0.600</td></tr>
+                          <tr class="info"><td>2</td><td>9</td><td>12</td><td>8</td><td>20</td><td>0.600</td></tr>
+                          <tr class="info"><td>3</td><td>10</td><td>15</td><td>10</td><td>25</td><td>0.600</td></tr>
+                          <tr class="info"><td>4</td><td>2</td><td>11</td><td>9</td><td>20</td><td>0.550</td></tr>
+                          <tr><td>5</td><td>7</td><td>11</td><td>9</td><td>20</td><td>0.550</td></tr>
+                          <tr><td>6</td><td>8</td><td>11</td><td>9</td><td>20</td><td>0.550</td></tr>
+                          <tr><td>7</td><td>3</td><td>13</td><td>12</td><td>25</td><td>0.520</td></tr>
+                          <tr><td>8</td><td>6</td><td>12</td><td>13</td><td>25</td><td>0.480</td></tr>
+                          <tr><td>9</td><td>4</td><td>13</td><td>17</td><td>30</td><td>0.433</td></tr>
+                          <tr><td>10</td><td>5</td><td>8</td><td>12</td><td>20</td><td>0.400</td></tr>
+                          <tr><td>11</td><td>11</td><td>4</td><td>16</td><td>20</td><td>0.200</td></tr>
+
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!--League Rules-->
+<div id="rules" class="content-section-a">
+
+  <div class="container">
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+          <h2>League Rules</h2>
+      </div>
+      <div class="row">
+
+
+          <div class="col-sm-12 wow fadeInLeftBig" data-animation-delay="200">
+              <h3 class="section-heading">General Information</h3>
+
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i> This is a 10 week, 4 Point Pitch League</li>
+                  <li><i class="glyphicon glyphicon-ok"></i> There are 9 weeks of regular season play</li>
+                  <li><i class="glyphicon glyphicon-ok"></i> The league consists of 2 man teams, playing a total of 5 games head-to-head</li>
+                  <li><i class="glyphicon glyphicon-ok"></i> Each game starts at 11 points, the first team to reach 0 wins the match.  </li>
+                  <li><i class="glyphicon glyphicon-ok"></i> We play for high, low, jack and game.  <strong>No tens</strong> are in the deck. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i> You must capture the jack to receive the point, but do not have to capture low.</li>
+
+              </ul>
+
+          </div>
+      </div>
+  </div>
+  <!-- /.container -->
+</div>
+
+<div class="content-section-b">
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-sm-12 wow fadeInLeftBig" data-animation-delay="200">
+              <h3 class="section-heading">Where\When do we play?</h3>
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>We play at the Duryea VFW every Tuesday at 6:30 pm. - if that is too early for a team to play, please consult the league roster, contact the team and coordinate a better time to play. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>The VFW is located at 492 Stephenson St, Duryea, PA 18642.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>The VFW kitchen is open on Tuesday's, food is available for purchase if needed</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Have nowhere else to go? After your scheduled match, hang out and play a few pick-up games!</li>
+              </ul>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="content-section-a">
+
+  <div class="container">
+
+      <div class="row">
+
+
+          <div class="col-sm-12 wow fadeInLeftBig" data-animation-delay="200">
+              <h3 class="section-heading">What's the Cost?</h3>
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>There is a weekly costs of 10 GIL per man (20 GIL per team).  Please pay each week on time. <strong>You are also responsible for the 10 GIL weekly fee, even if you are not present</strong></li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Teams are also charged 1 GIL per total "ups" at the end of all 3 games that must be payed the evening of the match. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Ups are owed only for the losing team of that game. For example, if team 1 is playing team 10, team 1 has 4 ups for a game, and team 10 has 8 ups.  If team 10 wins, team 1 owes 4 GIL, team 10 does not owe for that game.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>To purchase beer\drinks, you may be required to purchase a social membership to the VFW.  It is an annual cost of $15, but a great way to support the local chapter.  You do not have to be a military veteran to acquire a membership.</li>
+              </ul>
+
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<div class="content-section-b">
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-sm-12 wow fadeInLeftBig" data-animation-delay="200">
+              <h3 class="section-heading">What's the "money" for?</h3>
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>100% of all "up's" go towards an end of season party</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>An additional 400 GIL from weekly dues are kept in reserve towards the end of season party</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>A small amount of funds go towards decks of cards, scoring sheets and other items required to run the league</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>The top 4 teams play in an end of season tournament (see playoff's section for more details).  Payout's are ESTIMATED as follows:</li>
+                  <li style="padding-left:35px;"><i class="glyphicon glyphicon-ok"></i>1st place - 800 GIL</li>
+                  <li style="padding-left:35px;"><i class="glyphicon glyphicon-ok"></i>2nd place - 400 GIL</li>
+                  <li style="padding-left:35px;"><i class="glyphicon glyphicon-ok"></i>3rd place - 250 GIL</li>
+                  <li style="padding-left:35px;"><i class="glyphicon glyphicon-ok"></i>4th place - 125 GIL</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>We will also keep aside at least 225 GIL for a 6 team losers bracket, also to be played out the final week of the season.</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="content-section-a">
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-sm-12 wow fadeInRightBig" data-animation-delay="200">
+              <h3 class="section-heading">What if I can't make it?</h3>
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>If you cannot attend, attempt to find an alternate player to fill in for you, or <strong>contact the other team - NOT THE COMMISH</strong> to reschedule.  </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Please be mindful of other peoples time, if you cannot make a match, or will be late, please contact the other team and let them know.  </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>You are also responsible for the 10 GIL weekly fee, <strong>even if you are not present</strong></li>
+                  <li><i class="glyphicon glyphicon-ok"></i>A full time player on another team <strong>cannot</strong> be a substitute, but check the league contact list for specified league alternate's, or contact the commissioner if you have another partner you'd like to have sit in.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i><strong>All missed games must be made up</strong> by the final week of the season.  It's always possible to make games up after your weekly scheduled match, but if necessary meet another night at a time that is convenient for both teams. It's always an option to perform make-up games after a regularly scheduled match, but remember that other teams may be attempting to perform make-up games as well, so complete your matches as soon as possible! Remember, <strong>the league depends on all scheduled matched being completed on time</strong>.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>You can download a printable scoring sheet in the downloads section of the website if needed. If not available, please track the date, scorekeeper, total "ups" for each team, scores for each match, and a final score.  Present to the commissioner(s) once complete.</li>
+              </ul>
+
+          </div>
+
+
+
+      </div>
+  </div>
+</div>
+
+<div class="content-section-b">
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-sm-12 wow fadeInRightBig" data-animation-delay="200">
+              <h3 class="section-heading">Cheating</h3>
+              <div class="sub-title lead3">Don't Do It</div>
+              <p class="lead">
+                  Cheating is a serious offense.. and seriously uncool.  Don't signal, don't tip cards, don't throw games. If a team is suspected of cheating, please contact a commissioner directly stating the infraction(s).  If a team is cheating, the level of offense and penalty will be decided by the commissioner(s), which can vary from forfeiture of single games, to matches, to an entire season.
+              </p>
+          </div>
+
+
+
+      </div>
+  </div>
+  <!-- /.container -->
+</div>
+
+<div class="content-section-a">
+
+  <div class="container">
+      <div class="row">
+
+
+
+          <div class="col-sm-12 wow fadeInLeftBig" data-animation-delay="200">
+              <h3 class="section-heading">In Game Rules</h3>
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>Choosing the Dealer - Cards are initially shuffled, one card is flipped over for each player. The highest card (or first Ace) will be the initial dealer for the first game.  Teams can also choose to make the "lowest" card the scorekeeper.  After a game is won, the next player who would have received deal on the winning team will become dealer for the start of the new game.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Misdeals – A misdeal shall be defined as when the dealer either deals too many or too few cards or when a card is turned or flipped over by dealer <strong>before first card is played</strong>. The deal must be passed to the player to the left. If card is flipped over by a player other than dealer, the cards shall be dealt over and shall not be passed. A dealer misdeal will lead to the dealing team going up for the points that have been bid, or if the bidding has not begun yet, the dealing team will go up 2 points.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>No Forced Bids – When no bid is tendered, the dealer may choose to not play out the hand, but the team will go up 2 points. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Talking across the table – After the cards are dealt and the bidding is in process, players should not talk across the table. For example, a player should not express dismay at their hand to encourage their partner to bid. Players should not coach their partners as to which cards to throw. It is up to each player to keep track of what point cards are played or as to what suit trump is - it is never appropriate to ask. Any player may ask the score, however it is inappropriate to announce the score across table to your partner as to be construed as encouragement to bid.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Renegs – A renege is defined as when a player does not follow suit when they have that suit in their hand. The team that has reneged will go up for the points that have been bid and the opposing team receives the points bid.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Playing out of turn – This is defined as when a player pitches out of turn. Opposing teams receives points bid and deal is passed (this does not count for very last card as it does not affect other cards pitched).</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Bidding to go out – It is not necessary to bid a team to win. The first team to 0 shall receive the win. If both teams reach 0 in the final hand, the team that bid receives the wins. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Counting for game - Cards shall be counted face up on the table. Opposing teams can request a re-count if they feel necessary.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Finished Players – Enjoy the games and have fun! However, it is not appropriate to give advice to individuals who are still playing or point out mistakes that have been made. Please avoid any commentary until all matches are complete.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>At no time can a player throw in his cards during a game.  Example – a player has no trump and “phone numbers” for cards, so he throws in all remaining cards in his had early in the game.  It’s bad etiquette and forbidden due to good sportsmanship rules.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>If you do not agree or understand any of the rules, please clarify with the co-commissioners prior to starting any games.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>For any rules not defined explicitly herein, consult the league Co-Commissioner's, they have final say</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- /.container -->
+</div>
+
+<div class="content-section-b">
+
+  <div class="container">
+      <div class="row">
+
+          <div class="col-sm-12 wow fadeInRightBig" data-animation-delay="200">
+              <h3 class="section-heading" id="hPlayoffs">Playoffs</h3>
+
+              <ul class="descp lead2">
+                  <li><i class="glyphicon glyphicon-ok"></i>After all regular season weeks have concluded, top 4 teams based on <strong>winning %</strong>  advance to the playoffs. </li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Tie-Breaker #1 - If 2 teams are tied via winning percentage for 1 playoff position (example: 4th seed), their regular season head-to-head score determine's who advances.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Tie-Breaker #2 - If 3 or more teams are tied via winning percentage for playoff position(s), <strong>head-to-head record is ignored</strong>, the teams will face off in a 3 game playoff (example: if 3 teams are tied, the 3 teams will face each other in a 2 vs. 2 vs. 2 matchup).  The first team to 3 wins advances.  If multiple playoff seeds are being decided, the first winning team moves on, the other teams remain playing until the next team has reached 3 wins.  The head-to-head-to-head matchup will be scheduled as needed,but must be completed by the start of Week 10 (playoff week). Teams should coordinate and find a time to play amongst themselves, but contact the commissioner(s) should scheduling become a problem. <strong>Failure</strong> to complete the playoff matchup in a timely fashion will result in forfeiture.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>Seeding - Teams are seeded based on winning % (followed by when they got into the playoffs, see Tie-Breaker #2).  There are 2 rounds of playoffs, Round 1: Seed #1 vs. Seed #4 and Seed #2 vs Seed #3.  Round 2: Winner's advance to vie for 1st and 2nd place, Loser's advance to vie for 3rd and 4th place. All matches are a best-of-3 head-to-head matchup.</li>
+                  <li><i class="glyphicon glyphicon-ok"></i>We will have a "loser's tournament" at the end of year party for all teams not ranked in the top 4 at the end of the season.</li>
+              </ul>
+          </div>
+
+
+
+      </div>
+  </div>
+  <!-- /.container -->
+</div>
+
+
+<!-- Contact -->
+<div id="commish" class="content-section-a">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+              <h2>Commissioner Contact</h2>
+              <p class="lead" style="margin-top:0">Shoot a note directly to the commissioner's</p>
+          </div>
+
+          <form role="form" action="" method="post">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="InputName">Your Name</label>
+                      <div class="input-group">
+                          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputEmail">Your Email</label>
+                      <div class="input-group">
+                          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="InputMessage">Message</label>
+                      <div class="input-group">
+                          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                      </div>
+                  </div>
+
+                  <input type="button" name="submitMail" id="submitMail" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+
+                  <div id="divEmailSuccess" class="alert alert-success" style="display:none;">Thank you, your message has been sent to Carl Witkowski\Mark Hoover</div>
+
+              </div>
+          </form>
+
+          <hr class="featurette-divider hidden-lg">
+          <div class="col-md-5 col-md-push-1 address">
+              <h3>Co-Commishes</h3>
+              <p class="lead">
+                  Eric Witkowski<br>
+                  <br>
+                  Phone: 570-498-9711<br />
+                  Email: ewitkowski805@gmail.com<br />
+                  Preferred Contact Method: Text
+              </p>
+              <p class="lead">
+                  Mark Hoover<br>
+                  <br>
+                  Phone: 570-299-9992<br />
+                  Email: hoover@shamrocknepa.com<br />
+                  Preferred Contact Method: Text
+              </p>
+              <h3>Social</h3>
+              <li class="social">
+                  <a href="https://www.facebook.com/Duryea-VFW-1227-135993083247775/" target="_blank"><i class="fa fa-facebook-square fa-size"> </i></a>
+
+              </li>
+          </div>
+      </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-7">
+              <h3 class="footer-title">DISCLAIMER</h3>
+              <p>
+                  League fee's and payouts are GIL. GIL have no monetary value nor legal tender and are completely and utterly useless.  League participation and game play is for entertainment purposes only. God Bless America.
+              </p>
+
+          </div>
+
+
+      </div>
+  </div>
+</footer>
+
 
