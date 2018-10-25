@@ -38,12 +38,13 @@ export class NewsComponent implements OnInit {
     postedDate: '9/23/2018 - 6:30 AM'
   }];
 
-  importantAnnouncement: INews = {
-    icon: this.assetImgSrcRoot + 'book.svg',
-    title: 'No Cheating!',
-    content: 'It has been brought to our attention that a number of you are talking across the table.  Per the rules cheating is strictly forbidden.  We will be enforcing anti-cheating measures starting next week, any violation will be dealt with swiftly including forfeiture of games or all matches played overall.',
-    postedDate: '9/24/2018 - 9:30 AM'
-  };
+  importantAnnouncement: INews; 
+  // = {
+  //   icon: this.assetImgSrcRoot + 'book.svg',
+  //   title: 'No Cheating!',
+  //   content: 'It has been brought to our attention that a number of you are talking across the table.  Per the rules cheating is strictly forbidden.  We will be enforcing anti-cheating measures starting next week, any violation will be dealt with swiftly including forfeiture of games or all matches played overall.',
+  //   postedDate: '9/24/2018 - 9:30 AM'
+  // };
 
   constructor() { }
 
