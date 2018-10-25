@@ -34,41 +34,42 @@
 
     <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li class="menuItem"><a href="#news">News</a></li>
-        <li class="menuItem"><a href="#contact">Contact List</a></li>
-        <li class="menuItem"><a href="#schedule">Schedule</a></li>
-        <li class="menuItem"><a href="#standings">Standings</a></li>
-        <li class="menuItem"><a href="#stats">Stats</a></li>
-        <li class="menuItem"><a href="#carousel">Scoresheets</a></li>
-        <li class="menuItem"><a href="#rules">League Rules</a></li>
+        <li class="menuItem"><a routerLink="News">News</a></li>
+        <li class="menuItem"><a routerLink="Contact">Contact List</a></li>
+        <li class="menuItem"><a routerLink="Schedule">Schedule</a></li>
+        <li class="menuItem"><a routerLink="Standings">Standings</a></li>
+        <!-- <li class="menuItem"><a href="#carousel">Scoresheets</a></li> -->
+        <li class="menuItem"><a routerLink="Rules">League Rules</a></li>
         <!--<li class="menuItem"><a href="#downloads">Downloads</a></li>-->
-        <li class="menuItem"><a href="#commish">Commissioner Contact</a></li>
+        <!-- <li class="menuItem"><a href="#commish">Commissioner Contact</a></li> -->
       </ul>
     </div>
 
   </div>
 </nav>
 
-<div id="news" class="content-section-a" style="border-top: 0">
+<router-outlet></router-outlet>
+
+<!-- <div id="news" class="content-section-a" style="border-top: 0">
   <div class="container">
 
     <app-news></app-news>
 
   </div>
 </div>
-<!-- Contact List -->
+
 <div id="contact" class="content-section-b ">
   <div class="container">
     <app-contact-list></app-contact-list>
   </div>
 </div>
-<!-- Leage SChed -->
+
 <div id="schedule" class="content-section-a ">
   <div class="container">
     <app-schedule></app-schedule>
   </div>
 </div>
-<!-- Leage Standings -->
+
 <div id="standings" class="content-section-b ">
   <div class="container">
     <app-standings></app-standings>
@@ -77,12 +78,12 @@
 </div>
 
 
-<!--League Rules-->
+
 <app-league-rules></app-league-rules>
 
 
-<!-- Contact -->
+
 
 <footer>
   <app-footer></app-footer>
-</footer>
+</footer> -->
