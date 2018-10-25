@@ -12,4 +12,8 @@ export class ScheduleComponent implements OnInit {
   ngOnInit() {
   }
 
+  teamSelectChange(args) {
+   alert('i changed!');
+  }
+
 }
