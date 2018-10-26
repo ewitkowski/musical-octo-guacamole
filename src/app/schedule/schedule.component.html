@@ -3,100 +3,32 @@
         <h2>Schedule</h2>
         <p class="lead" style="margin-top:0">Here is the weekly schedule</p>
         <p>
-            Show <select name="team" id="team" (change)="teamSelectChange($event)">
-                <option value="All">All Teams</option>
-                <option value="1">Team 1 (Carl\Mark)</option>
-                <option value="2">Team 2 (Chris\Jeff)</option>
-                <option value="3">Team 3 (Bob\Tony)</option>
-                <option value="4">Team 4 (Jon\Ed)</option>
-                <option value="5">Team 5 (Ryan\Frank Bi.)</option>
-                <option value="6">Team 6 (Joe P\Frank Ba.)</option>
-                <option value="7">Team 7 (Noah\Brian)</option>
-                <option value="8">Team 8 (Jerry\Nick)</option>
-                <option value="9">Team 9 (John\Rob)</option>
-                <option value="10">Team 10 (Ed\Ed's Mystery Partner)</option>
-                <option value="11">Team 11 (Stacy\Jill)</option>
+            Show <select name="team" id="teamSelection" (change)="teamSelectChange($event)">
+                <!-- <option value="All">All Teams</option> -->
+                <option *ngFor="let team of teams" value="{{ team.teamNumber }}">Team {{ team.teamNumber}} - {{ team.teamMemberA }} / {{ team.teamMemberB }}</option>
             </select>
         </p>
 
     </div>
+    <!-- <div>
+        {{ teams | json }}
+    </div> -->
     <div class="mockup-content">
-
         <div class="">
             <table id="tableSched" class="table">
                 <thead>
                     <tr>
                         <th>Matchup</th>
+                        <th>Date</th>
                         <th>Team 1</th>
-
                         <th>Team 2</th>
                         <th>Results</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr><td>02 <small>(9/18/2018)</small></td><td>3</td><td>1</td><td>Team 3 beat Team 1 3-2</td></tr>
-                    <tr><td>02 <small>(9/18/2018)</small></td><td>4</td><td>2</td><td>Team 2 beat Team 4 4-1</td></tr>
-                    <tr><td>02 <small>(9/18/2018)</small></td><td>6</td><td>5</td><td>Team 6 beat Team 5 3-2</td></tr>
-                    <tr><td>02 <small>(9/18/2018)</small></td><td>10</td><td>8</td><td>Team 10 beat Team 8 4-1</td></tr>
-                    <tr><td>02 <small>(9/18/2018)</small></td><td>7</td><td>9</td><td>Team 9 beat Team 7 3-2</td></tr>
-                    <tr><td>03 <small>(9/25/2018)</small></td><td>4</td><td>3</td><td>Team 3 beat Team 4 3-2</td></tr>
-                    <tr><td>03 <small>(9/25/2018)</small></td><td>1</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>03 <small>(9/25/2018)</small></td><td>2</td><td>6</td><td>Team 6 beat Team 2 3-2 (played 9/12)</td></tr>
-                    <tr><td>03 <small>(9/25/2018)</small></td><td>11</td><td>7</td><td>Team 7 beat Team 11 3-2 (played 9/12)</td></tr>
-                    <tr><td>03 <small>(9/25/2018)</small></td><td>9</td><td>10</td><td>Team 10 beat Team 9 3-2</td></tr>
-                    <tr><td>04 <small>(10/2/2018)</small></td><td>2</td><td>1</td><td>Team 1 beat Team 2 4-1</td></tr>
-                    <tr><td>04 <small>(10/2/2018)</small></td><td>5</td><td>3</td><td>Team 3 beat Team 5 3-2 (played 9/12)</td></tr>
-                    <tr><td>04 <small>(10/2/2018)</small></td><td>6</td><td>4</td><td>Team 4 beat Team 6 3-2</td></tr>
-                    <tr><td>04 <small>(10/2/2018)</small></td><td>7</td><td>8</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>04 <small>(10/2/2018)</small></td><td>11</td><td>9</td><td>Team 9 beat Team 11 4-1</td></tr>
-                    <tr><td>05 <small>(10/9/2018)</small></td><td>5</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>05 <small>(10/9/2018)</small></td><td>1</td><td>4</td><td>Team 4 beat Team 1 3-2</td></tr>
-                    <tr><td>05 <small>(10/9/2018)</small></td><td>3</td><td>6</td><td>Team 3 beat Team 6 3-2</td></tr>
-                    <tr><td>05 <small>(10/9/2018)</small></td><td>11</td><td>8</td><td>Team 8 beat Team 11 4-1</td></tr>
-                    <tr><td>05 <small>(10/9/2018)</small></td><td>7</td><td>10</td><td>Team 7 beat Team 10 3-2</td></tr>
-                    <tr><td>06 <small>(10/16/2018)</small></td><td>6</td><td>1</td><td>Team 1 beat Team 6 3-2</td></tr>
-                    <tr><td>06 <small>(10/16/2018)</small></td><td>2</td><td>3</td><td>Team 2 beat Team 3 4-1</td></tr>
-                    <tr><td>06 <small>(10/16/2018)</small></td><td>4</td><td>5</td><td>Team 4 beat Team 5 3-2</td></tr>
-                    <tr><td>06 <small>(10/16/2018)</small></td><td>8</td><td>9</td><td>Team 9 beat Team 8 3-2</td></tr>
-                    <tr><td>06 <small>(10/16/2018)</small></td><td>10</td><td>11</td><td>Team 10 beat Team 11 5-0</td></tr>
-                    <tr><td>07 <small>(10/23/2018)</small></td><td>11</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>07 <small>(10/23/2018)</small></td><td>9</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>07 <small>(10/23/2018)</small></td><td>8</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>07 <small>(10/23/2018)</small></td><td>7</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>07 <small>(10/23/2018)</small></td><td>3</td><td>10</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>08 <small>(10/30/2018)</small></td><td>2</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>08 <small>(10/30/2018)</small></td><td>6</td><td>8</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>08 <small>(10/30/2018)</small></td><td>3</td><td>9</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>08 <small>(10/30/2018)</small></td><td>1</td><td>10</td><td>Team 1 beat Team 10 4-1 (played 9/12)</td></tr>
-                    <tr><td>08 <small>(10/30/2018)</small></td><td>5</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>09 <small>(11/6/2018)</small></td><td>8</td><td>1</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>09 <small>(11/6/2018)</small></td><td>10</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>09 <small>(11/6/2018)</small></td><td>7</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>09 <small>(11/6/2018)</small></td><td>9</td><td>5</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>09 <small>(11/6/2018)</small></td><td>6</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>10 <small>(11/13/2018)</small></td><td>8</td><td>2</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>10 <small>(11/13/2018)</small></td><td>11</td><td>3</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>10 <small>(11/13/2018)</small></td><td>10</td><td>4</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>10 <small>(11/13/2018)</small></td><td>9</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>10 <small>(11/13/2018)</small></td><td>1</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>11 <small>(11/20/2018)</small></td><td>9</td><td>1</td><td>Team 1 beat Team 9 4-1 (played 9/12)</td></tr>
-                    <tr><td>11 <small>(11/20/2018)</small></td><td>8</td><td>3</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>11 <small>(11/20/2018)</small></td><td>10</td><td>6</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>11 <small>(11/20/2018)</small></td><td>5</td><td>7</td><td>Team 7 beat Team 5 3-2 (played 9/25)</td></tr>
-                    <tr><td>11 <small>(11/20/2018)</small></td><td>4</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>12 <small>(11/27/2018)</small></td><td>3</td><td>7</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>12 <small>(11/27/2018)</small></td><td>4</td><td>8</td><td>Team 8 beat Team 4 4-1 (played 9/12)</td></tr>
-                    <tr><td>12 <small>(11/27/2018)</small></td><td>2</td><td>9</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>12 <small>(11/27/2018)</small></td><td>5</td><td>10</td><td>This matchup hasnt occurred yet</td></tr>
-                    <tr><td>12 <small>(11/27/2018)</small></td><td>1</td><td>11</td><td>This matchup hasnt occurred yet</td></tr>
-
-
+                <tbody *ngFor="let item of schedule">
+                    <tr><td>{{ item.matchup }} </td><td>{{item.matchDate}}</td><td> {{ item.teamA }} </td><td>{{ item.teamB }}</td><td> {{ item.result }} </td></tr>
                 </tbody>
             </table>
-
-
-
-
         </div>
     </div>
 </div>
